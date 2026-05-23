@@ -188,6 +188,10 @@
       style="font-family:'IBM Plex Mono',monospace;font-size:14px;padding:4px 12px;margin-left:6px;border:1px solid var(--border);border-radius:4px;background:var(--surface);color:var(--text);cursor:pointer;">
       Latest
     </button>
+    <button onclick="goRepo()"
+      style="font-family:'IBM Plex Mono',monospace;font-size:14px;padding:4px 12px;margin-left:6px;border:1px solid var(--border);border-radius:4px;background:var(--surface);color:var(--text);cursor:pointer;">
+      Repo
+    </button>
   </div>
 </header>
 
@@ -198,6 +202,10 @@
   }
   function goLatest() {
     window.open('../', '_blank');
+  }
+  function goRepo() {
+    const val = document.getElementById('cycle-input').value.trim();
+    if (val) window.open('https://github.com/comgsi/tmptest/tree/gh-page/' + val, '_blank');
   }
 </script>
 
