@@ -184,6 +184,10 @@
       style="font-family:'IBM Plex Mono',monospace;font-size:14px;padding:4px 12px;margin-left:6px;border:1px solid var(--border);border-radius:4px;background:var(--surface);color:var(--text);cursor:pointer;">
       Go
     </button>
+    <button onclick="goLatest()"
+      style="font-family:'IBM Plex Mono',monospace;font-size:14px;padding:4px 12px;margin-left:6px;border:1px solid var(--border);border-radius:4px;background:var(--surface);color:var(--text);cursor:pointer;">
+      Latest
+    </button>
   </div>
 </header>
 
@@ -191,6 +195,9 @@
   function goCycle() {
     const val = document.getElementById('cycle-input').value.trim();
     if (val) window.location.href = '../' + val + '/index.html';
+  }
+  function goLatest() {
+    window.location.href = '../';
   }
 </script>
 
@@ -288,11 +295,11 @@
     </div>
     <div class="section-body">
       <div class="link-grid">
-        <a class="link-card" href="jedivar.yaml" target="_blank">
+        <a class="link-card" href="https://github.com/comgsi/tmptest/blob/gh-page/2024050600/jedivar.yaml" target="_blank">
           <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 2h7l3 3v9H3z"/><polyline points="10,2 10,5 13,5"/><line x1="5" y1="8" x2="7" y2="8"/><line x1="5" y1="11" x2="8" y2="11"/></svg>
           jedivar.yaml
         </a>
-        <a class="link-card" href="jedivar.pass2.yaml" target="_blank">
+        <a class="link-card" href="https://github.com/comgsi/tmptest/blob/gh-page/2024050600/jedivar.pass2.yaml" target="_blank">
           <svg class="icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 2h7l3 3v9H3z"/><polyline points="10,2 10,5 13,5"/><line x1="5" y1="8" x2="7" y2="8"/><line x1="5" y1="11" x2="8" y2="11"/></svg>
           jedivar.pass2.yaml
         </a>
