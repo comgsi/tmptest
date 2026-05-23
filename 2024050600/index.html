@@ -184,6 +184,10 @@
       style="font-family:'IBM Plex Mono',monospace;font-size:14px;padding:4px 12px;margin-left:6px;border:1px solid var(--border);border-radius:4px;background:var(--surface);color:var(--text);cursor:pointer;">
       Go
     </button>
+    <button onclick="goLatest()"
+      style="font-family:'IBM Plex Mono',monospace;font-size:14px;padding:4px 12px;margin-left:6px;border:1px solid var(--border);border-radius:4px;background:var(--surface);color:var(--text);cursor:pointer;">
+      Latest
+    </button>
   </div>
 </header>
 
@@ -191,6 +195,9 @@
   function goCycle() {
     const val = document.getElementById('cycle-input').value.trim();
     if (val) window.location.href = '../' + val + '/index.html';
+  }
+  function goLatest() {
+    window.location.href = '../';
   }
 </script>
 
